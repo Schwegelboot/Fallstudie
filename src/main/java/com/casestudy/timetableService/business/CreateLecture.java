@@ -4,7 +4,7 @@ import reactor.core.publisher.Mono;
 
 public interface CreateLecture {
 
-    Mono<String> createLecture();
+    Mono<Lecture> createLecture(Lecture lecture);
 
 
 }
