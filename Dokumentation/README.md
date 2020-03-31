@@ -12,10 +12,19 @@ https://www.mongodb.com/products/compass
 $ docker --version
 ...
 
+...console
+#pull latest docker image
+$ docker pull mongo
+
+...console
+#create mongo container from image
+$ docker create mongo
+
 ###Run MongoDB
 
 ...console
-$ docker run --name mongodb -d
+$ docker run -d -p 27017-27019:27017-27019 --name mongodb2 mongo
+
 
 #verify that mongodb is set up
 $ docker ps -a
